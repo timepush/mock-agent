@@ -1,0 +1,13 @@
+{
+  "name": "mock-agent",
+  "scripts": {
+    "dev": "bun run --hot src/agent.js",
+    "build": "bun build src/agent.js --target bun --outdir dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "yaml": "^2.8.0"
+  }
+}
