@@ -2,10 +2,12 @@ clients:
   - client_id: my-client-id
     secret: my-client-secret
     interval: 1s
-  - client_id: my-client-id2
-    secret: my-client-secret2
-    interval: 10s
-  - client_id: my-client-id3
-    secret: my-client-secret3
-    interval: 1m
-api_url: http://localhost/ingest/raw
+    mode: ndjson
+    api_url: http://localhost:5000/ingest/raw/stream
+  # - client_id: my-client-id2
+  #   secret: my-client-secret2
+  #   interval: 10s
+  # - client_id: my-client-id3
+  #   secret: my-client-secret3
+  #   interval: 1m
+api_url: http://localhost:5000/ingest/raw/stream
